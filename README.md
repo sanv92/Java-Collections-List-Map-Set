@@ -19,3 +19,6 @@
 
 ### HashSet
 - https://www.youtube.com/watch?v=WPcKwA5WF7s
+
+## Other links:
+- https://www.youtube.com/watch?v=-gKLTH0KTF4
