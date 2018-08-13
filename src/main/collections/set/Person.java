@@ -57,14 +57,3 @@ public class Person implements Comparable<Person> {
         return name.compareTo(p.getName());
     }
 }
-
-/*
-public boolean equals (Object aSong) {
-        Song s = (Song) aSong;
-        return getTitle().equals(s.getTitle());
-    }
-
-    public int hashCode() {
-        return title.hashCode();
-    }
- */
