@@ -116,7 +116,9 @@ public class Main {
         ListCollection l = seedingList(new ArrayList<>());
 
         long time = MeasuringExecutionTimeKt.start(title);
+
         seedingSet(l, set);
+
         MeasuringExecutionTimeKt.end(time);
     }
 
@@ -124,8 +126,8 @@ public class Main {
         System.out.println("Start (" + title + "):");
         ListCollection l = seedingList(new ArrayList<>());
 
-        SetCollection seeds = seedingSet(l, set);
-        Set<Person> items = seeds.getItems();
+        SetCollection s = seedingSet(l, set);
+        Set<Person> items = s.getItems();
 
         int index = 0;
         for(Person i : items) {
@@ -145,14 +147,16 @@ public class Main {
         SetCollection m = seedingSet(l, set);
 
         long time = MeasuringExecutionTimeKt.start(title);
+
         for (int i = 0; i < COUNT; i++) {
-            m.removeItem("1");
-            m.removeItem("2");
-            m.removeItem("3");
-            m.removeItem("4");
-            m.removeItem("5");
-            m.removeItem("6");
+            m.removeItem(new Person(1, 30, "Name 1"));
+            m.removeItem(new Person(2, 30, "Name 1"));
+            m.removeItem(new Person(3, 30, "Name 1"));
+            m.removeItem(new Person(1, 30, "Name 1"));
+            m.removeItem(new Person(2, 30, "Name 1"));
+            m.removeItem(new Person(3, 30, "Name 1"));
         }
+
         MeasuringExecutionTimeKt.end(time);
     }
 

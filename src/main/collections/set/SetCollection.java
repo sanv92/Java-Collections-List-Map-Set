@@ -18,7 +18,7 @@ public class SetCollection {
         return items;
     }
 
-    public void removeItem(String key) {
-        items.remove(key);
+    public void removeItem(Person item) {
+        items.remove(item);
     }
 }

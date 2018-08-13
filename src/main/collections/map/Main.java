@@ -158,7 +158,9 @@ public class Main {
         ListCollection l = seedingList(new ArrayList<>());
 
         long time = MeasuringExecutionTimeKt.start(title);
+
         seedingMap(l, map);
+
         MeasuringExecutionTimeKt.end(time);
     }
 
@@ -166,8 +168,8 @@ public class Main {
         System.out.println("Start (" + title + "):");
         ListCollection l = seedingList(new ArrayList<>());
 
-        MapCollection seeds = seedingMap(l, map);
-        Map<String, Person> m = seeds.getItems();
+        MapCollection s = seedingMap(l, map);
+        Map<String, Person> m = s.getItems();
 
         int index = 0;
         for(String key: m.keySet()) {
@@ -203,6 +205,7 @@ public class Main {
         MapCollection m = seedingMap(l, map);
 
         long time = MeasuringExecutionTimeKt.start(title);
+
         for (int i = 0; i < COUNT; i++) {
             m.removeItem("1");
             m.removeItem("2");
@@ -210,7 +213,9 @@ public class Main {
             m.removeItem("4");
             m.removeItem("5");
             m.removeItem("6");
+            m.removeItem("7");
         }
+
         MeasuringExecutionTimeKt.end(time);
     }
 

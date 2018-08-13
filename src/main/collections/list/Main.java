@@ -121,9 +121,11 @@ public class Main {
         ListCollection l = seedingList(list);
 
         long time = MeasuringExecutionTimeKt.start(title);
+
         int index = COUNT / 2;
         Person p = l.getItem(index);
-        System.out.println("Person2: " + p.getName());
+        System.out.println("Person: " + p.getName());
+
         MeasuringExecutionTimeKt.end(time);
     }
 
@@ -131,8 +133,10 @@ public class Main {
         ListCollection l = seedingList(list);
 
         long time = MeasuringExecutionTimeKt.start(title);
+
         int index = COUNT / 2;
         l.removeItem(index);
+
         MeasuringExecutionTimeKt.end(time);
     }
 
@@ -140,7 +144,9 @@ public class Main {
         ListCollection l = seedingList(list);
 
         long time = MeasuringExecutionTimeKt.start(title);
+
         l.removeItem(COUNT);
+
         MeasuringExecutionTimeKt.end(time);
     }
 
@@ -148,8 +154,10 @@ public class Main {
         ListCollection l = seedingList(list);
 
         long time = MeasuringExecutionTimeKt.start(title);
+
         int index = COUNT / 2;
         l.setItem(new Person(25, "Name 4"), index);
+
         MeasuringExecutionTimeKt.end(time);
     }
 
