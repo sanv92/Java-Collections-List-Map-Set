@@ -52,6 +52,8 @@ public class Main {
      */
     private static final String VECTOR = "Vector";
 
+    private static final String QUESTION_MESSAGE = "Enter collection test (fill - 1, get - 2, remove middle - 3, remove end - 4, add middle - 5): ";
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -173,6 +175,6 @@ public class Main {
     }
 
     private static void questionMessage() {
-        System.out.println("Enter collection test (fill - 1, get - 2, remove middle - 3, remove end - 4, add middle - 5): ");
+        System.out.println(QUESTION_MESSAGE);
     }
 }

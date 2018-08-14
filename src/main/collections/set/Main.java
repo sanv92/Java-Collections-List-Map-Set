@@ -69,6 +69,8 @@ public class Main {
      */
     private static final String TREE_SET = "TreeSet";
 
+    private static final String QUESTION_MESSAGE = "Enter collection test (fill - 1, show collection order - 2, remove - 3): ";
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -184,6 +186,6 @@ public class Main {
     }
 
     private static void questionMessage() {
-        System.out.println("Enter collection test (fill - 1, show collection order - 2, remove - 3): ");
+        System.out.println(QUESTION_MESSAGE);
     }
 }
